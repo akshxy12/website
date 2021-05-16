@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@200;300;400&display=swap');
+
+:root{
+    --serif-content: "Newsreader, Noto Serif SC, Times New Roman", serif;
+    --sans-serif-heading: "Lato", sans-serif;
+    --sans-serif-content: "KoHo", sans-serif;
+
+    --dark-900: rgb(0, 0, 0);
+    --dark-800: rgb(30, 30, 30);
+    --dark-700: rgb(60, 60, 60);
+    --dark-600: rgb(90, 90, 90);
+    --light-500: rgb(120, 120, 120);
+    --light-400: rgb(150, 150, 150);
+    --light-300: rgb(180, 180, 180);
+    --light-200: rgb(210, 210, 210);
+    --light-100: rgb(255, 255, 255);
+
+    --red-800: rgb(116, 0, 0);
+    --red-600: rgb(207, 0, 0);
+    --red-400: rgb(255, 0, 0);
+    --red-200: rgb(255, 62, 62);
+    --red-100: rgb(255, 142, 142);
+
+    --orange-600: rgb(199, 63, 0);
+    --orange-400: rgb(248, 79, 0);
+    --orange-200: rgb(255, 135, 79);
+
+    --blue-600: rgb(0, 3, 192);
+    --blue-400: rgb(0, 4, 255);
+    --blue-200: rgb(93, 96, 255);
+
+    --transition-time: 250ms;
+}
+
+*,
+*::before,
+*::after,
+div,
+h1,
+h2,
+h3{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+button,
+li{
+    font-family: var(--sans-serif-heading);
+}
+
+h1{ font-size: 2.6rem; }
+h2{ font-size: 1.8rem; }
+h3{ font-size: 1.5rem; }
+
+p{
+    font-family: var(--sans-serif-content);
+    font-weight: 300;
+}
+
+p{ font-size: 1.2rem; }
+li{ font-size: 1.1rem; }
+
+button{
+    font-size: 1.1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    background-color: var(--dark-800);
+    color: var(--light-100);
+}
+
+/* HEADER */
+header{
+    top: 0;
+    position: fixed;
+
+    height: 65px;
+    width: 100vw;
+    background-color: var(--dark-900);
+
+    display: flex;
+    align-items: center;
+}
+
+header img{
+    min-height: 40px;
+    height: 70%;
+    margin-left: 10px;
+}
+
+header nav{
+    height: 100%;
+    width: 100%;
+    padding-left: 50%;
+
+    display: flex;
+    align-items: center;
+}
+
+header ul{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+header li{
+    height: 50%;
+
+    list-style: none;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+
+    border-radius: 0.2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition-property: background-color;
+    transition-duration: var(--transition-time);
+    transition-timing-function: ease-in-out;
+}
+
+header li:hover{
+    background-color: var(--dark-700);
+    color: var(--light-100);
+}
+
+#slider{
+    margin-right: 3%;
+
+    min-width: 120px;
+    max-width: 120px;
+    height: 50%;
+
+    border-radius: 1rem;
+
+    display: flex;
+    align-items: center;
+}
+
+#theme_button{
+    width: 50%;
+    max-width: 80px;
+    height: 70%;
+    margin: 0 5%;
+
+    font-size: 0.9rem;
+
+    border: none;
+    border-radius: 1rem;
+}
+/* HEADER END */
+
+.first_container{
+    margin-top: 65px;
+}
+
+content > *{
+    width: 95%;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section{
+    padding: 1rem 0;
+}
+
+#gallery h2{
+    text-align: center;
+}
+
+.container{
+    margin: 1rem 0;
+    padding: 1rem;
+
+    transition-property: background-color color;
+    transition-duration: var(--transition-time);
+    transition-timing-function: ease-in-out;
+}
+
+.container:hover{
+    background-color: var(--dark-700);
+    color: var(--light-100);
+}
+
+.contents{
+    height: 40vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contents img{
+    height: 100%;
+}
+
+/* TEMP */
+img{
+    height: 100px;
+}
